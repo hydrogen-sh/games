@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  background: #eee; /* canvas の色を指定 */
+  display: block;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.explain-div {
+  padding-top: 60px;
+}
+
+.TopHead {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
