@@ -6,8 +6,8 @@ var ballRadius = 10; // ボールの半径を定義
 var x = canvas.width/2;
 var y = canvas.height-30;
 
-var dx = 2; // ボールの x 軸の移動量
-var dy = (Math.floor( Math.random() * 10 ) + -5); // ボールの y 軸の移動量
+var dx = (Math.floor( Math.random() * 10 ) + -5); // ボールの x 軸の移動量
+var dy = -2; // ボールの y 軸の移動量
 
 // ---!!!--- 自作 ---!!!---
 var paddleSpeed = 5; // パドルの速度 → -- !!!! -- → エラー発生時は変数を消去し、使用箇所を 5 に変更すること
@@ -18,8 +18,8 @@ var paddleWidth = 75; // パドルの幅
 var paddleX = (canvas.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
-var brickRowCount = 5;
-var brickColumnCount = 3;
+var brickRowCount = 5; // ブロック群の行数 default → 5
+var brickColumnCount = 5; // ブロック群の列数 default → 3
 var brickWidth = 75; // ブロックの幅
 var brickHeight = 20; // ブロックの高さ
 var brickPadding = 10; // ブロック間の距離
