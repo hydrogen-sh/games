@@ -6,8 +6,9 @@ var ballRadius = 10; // ボールの半径を定義
 var x = canvas.width/2;
 var y = canvas.height-30;
 
+var ballXY = 4;
 var dx = (Math.floor( Math.random() * 10 ) + -5); // ボールの x 軸の移動量
-var dy = -2; // ボールの y 軸の移動量
+var dy = ballXY / dx; // ボールの y 軸の移動量
 
 // ---!!!--- 自作 ---!!!---
 var paddleSpeed = 5; // パドルの速度 → -- !!!! -- → エラー発生時は変数を消去し、使用箇所を 5 に変更すること
